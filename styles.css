@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    box-shadow: 0 0 20px 5px rgba(138, 43, 226, 0.8), 0 0 40px 10px rgba(138, 43, 226, 0.6);
+    width: 300px;
+    text-align: center;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Glowing animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(138, 43, 226, 0.8), 0 0 40px 10px rgba(138, 43, 226, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 20px 10px rgba(138, 43, 226, 1), 0 0 50px 15px rgba(138, 43, 226, 0.8);
+    }
+}
+
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background:rgb(213, 109, 248);
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
